@@ -1,0 +1,93 @@
+/* my Style */
+:root{
+    --font-primary: 'Poppins', sans-serif;
+    --primary-color: #406AAF;
+    --secondary-color: #DCE8FE;
+    --text-color: #000000;
+    --hover-btn: #5486D7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: var(--font-primary);
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.text-logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.text-logo span{
+    color: var(--primary-color);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 72px;
+}
+
+.nav-links a{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links .home-text{
+    color: var(--primary-color);
+}
+
+.nav-links a:hover, 
+.nav-links a:active{
+    color: var(--primary-color);
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 600;
+}
+
+.btn-signup{
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 14px var(--secondary-color);
+}
+
+.btn-signup:hover{
+    background-color: var(--hover-btn);
+}
+
+/* Responsive Design */
