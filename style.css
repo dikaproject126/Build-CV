@@ -390,6 +390,7 @@
 }
 
 
+/* CTA Actions */
 .client-profile{
     display: flex;
     align-items: center;
@@ -426,4 +427,44 @@
     font-size: 25px;
     letter-spacing: 2px;
 }
+
+.cta-banner{
+    padding: 60px 0;
+}
+
+.cta-box{
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 35px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.cta-box h2{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.btn-outline-white{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.btn-outline-white:hover{
+    background-color: var(--hover-btn);
+}
+
+/* Footer */
+
+
 /* Responsive Design */
