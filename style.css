@@ -35,19 +35,19 @@
     align-items: center;
 }
 
-.logo{
+.logo, .footer-brand{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.text-logo{
+.text-logo, .footer-brand p{
     font-size: 30px;
     font-weight: 700;
     color: var(--text-color);
 }
 
-.text-logo span{
+.text-logo span, .footer-brand p span{
     color: var(--primary-color);
 }
 
@@ -430,12 +430,13 @@
 
 .cta-banner{
     padding: 60px 0;
+    background: linear-gradient(to bottom, #FFFFFF 50%, var(--secondary-color)50%);
 }
 
 .cta-box{
     background-color: var(--primary-color);
     border-radius: 15px;
-    padding: 35px 64px;
+    padding: 15px 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -444,7 +445,7 @@
 
 .cta-box h2{
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin: 0;
 }
@@ -453,7 +454,7 @@
     background-color: transparent;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
-    padding: 20px 30px;
+    padding: 15px 30px;
     border-radius: 12px;
     display: inline-block;
     transition: all 0.3s ease;
@@ -465,6 +466,70 @@
 }
 
 /* Footer */
+.footer{
+    background-color: var(--secondary-color);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+}
+
+.footer-brand{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-socials{ 
+    display: flex;
+    gap: 20px;
+}
+
+.footer-socials img{
+    padding-top: 5px;
+    width: 48px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover{
+    transform: translateY(-3px) scale(1.1);
+}
+
+.footer-links h4{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links ul li a{
+    color: var(--text-color);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: var(--primary-color);
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--primary-color) ;
+}
+
+.footer-bottom p{
+    font-size: 15px;
+}
 
 /* Responsive Design */
