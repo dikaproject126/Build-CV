@@ -13,7 +13,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
     font-family: var(--font-primary);
 }
 
@@ -45,6 +44,29 @@
     font-size: 30px;
     font-weight: 700;
     color: var(--text-color);
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.menu-toggle{ 
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
 .text-logo span, .footer-brand p span{
@@ -533,3 +555,31 @@
 }
 
 /* Responsive Design */
+
+@media (max-width: 768px){
+    .menu-toggle{
+        display: flex;
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        padding: 32px 0;
+        gap: 24px;
+        z-index: 99;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
