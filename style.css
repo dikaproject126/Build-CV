@@ -564,7 +564,7 @@
 
     .nav-menu{
         position: absolute;
-        top: 70px;
+        top: 100px;
         left: -100%;
         width: 100%;
         background-color: #FFFFFF;
@@ -587,6 +587,10 @@
     .logo img{
         width: 50px;
         height: auto;
+    }
+
+    .hero{
+        padding: 60px 0 !important;
     }
 
     .hero-wrapper{
@@ -629,5 +633,12 @@
     .urutan-4{
         order: 4;
         margin: 0 auto;
+    }
+
+    .services-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
     }
 }
